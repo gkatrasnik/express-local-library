@@ -30,9 +30,7 @@ AuthorSchema.virtual("lifespan").get(function () {
       DateTime.DATE_MED
     );
   }
-  return this.date_of_birth
-    ? DateTime.fromJSDate(this.date_of_birth).toLocaleString(DateTime.DATE_MED)
-    : "";
+  return lifetime_string;
 });
 
 // Virtual for author's URL
